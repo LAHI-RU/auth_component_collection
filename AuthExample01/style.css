@@ -34,3 +34,114 @@ body {
   height: 100%;
   transition: 1s ease-in-out;
 }
+
+.wrapper.active .form_wrapper.sign_in {
+  transform: scale(0) translate(0, 500px);
+}
+.wrapper .form_wrapper.sign_up {
+  transform: scale(0) translate(0, -500px);
+  top: 0;
+  position: absolute;
+}
+.wrapper.active .form_wrapper.sign_up {
+  transform: scale(1) translate(0, 0);
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.input_group {
+  position: relative;
+  margin: 30px 0;
+}
+.input_group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.input_group input {
+  width: 320px;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 5px;
+}
+.input_group input:focus ~ label,
+.input_group input:valid ~ label {
+  top: 0;
+  background: #fff;
+  color: #d13161;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.remember {
+  margin: 15px 0;
+}
+.remember label {
+  font-size: 14px;
+}
+.remember label input {
+  accent-color: #d13161;
+}
+button {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: #d13161;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  transition: 0.5s;
+}
+button:hover {
+  background: #fff;
+  color: #d13161;
+}
+.sign_up_link {
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+}
+.sign_up_link p a {
+  color: #db6c8d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+.sign_up_link p a:hover {
+  text-decoration: underline;
+}
+.social_platform {
+  font-size: 15px;
+  text-align: center;
+}
+.social_platform a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 15px 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.social_platform a:hover {
+  background: #fff;
+  color: #d13161;
+}
